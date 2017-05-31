@@ -1,0 +1,84 @@
+/*가이드라인 화면에 보여준다*/
+body {
+    margin: 0;
+    /*padding-top: 48px;*/
+    height: 100vh;
+    background: url("../assets/leading_pattern_24.png");
+    color: #111;
+    /*속기에서도 글꼴이랑 사이즈는 필수*/
+    font: 400 100%/1.5 "Spoqa Han Sans", Dotum, sans-serif;
+    letter-spacing: -0.05em; 
+}
+
+/* 제목디자인 */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    color: #111;
+}
+
+h1, h2 {
+    font-weight: 300;
+}
+
+h3, h4, h5 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 3.8145em; /* 3.0516*1.25 */
+    line-height: 1.1800; /* 3 * 1.5/3.8145 */
+    margin-bottom: 0.3932em; /* 1.5/3.8145 */
+}
+
+h2 {
+    font-size: 3.0516em; /* 2.4413*1.25 */
+    line-height: 0.9900; /* 2 * 1.5/3.0516 */
+    margin-bottom: 0.4915em; /* 1.5/3.0516 */
+}
+
+h3 {
+    font-size: 2.4413em; /* 1.9531*1.25 */
+    line-height: 1.2300; /* 2 * 1.5/2.4413 */
+    margin-bottom: 0.6144em;
+}
+
+h4 {
+    font-size: 1.9531em; /* 1.5625x1.25 */
+    line-height: 1.5400; /* 2 * 1.5/1.9531 */
+    margin-bottom: 0.7680em; /* 1.5/1.9531 */
+}
+
+h5 {
+    font-size: 1.5625em; /* 1.25x1.25 */
+    line-height: 0.96; /* 1*1.5/1.5625 */
+    margin-bottom: 0.96em; /**/
+}
+
+h6 {
+    font-weight: 700;
+    /* 본문 글자 크기 x 글자 크기 배율 */
+    font-size: 1.25em; /* 1em = 16px */
+    /* 행간 = 디자인 상의 줄 개수 x (행간비율/글자크기비율) 소수점 셋째자리에서 올림 */
+    line-height: 1.2000; /* 1칸 x (1.5/1.25) */
+    /* 아래쪽 마진 = 행간비율 / 글자크기비율 */
+    margin-bottom: 1.2000em; /* 1.5/1.25 */
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+/*단락디자인*/
+p {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+
+.container {
+    width: 640px;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+
+ }
