@@ -1,0 +1,53 @@
+/*! mhye's study, gitgub:cepien */
+
+/* 가이드라인 화면에 그릴 것 */
+html {
+    background: #fff;
+}
+
+body {
+    margin: 0;
+    padding-top: 48px;
+    height: 100vh;
+
+    /* 가이드라인 설계 */
+    background: url("../assets/leading_pattern_24.png");
+    /* 글꼴, 글자 크기, 글자색상, 자간, 어간, 행간 */
+    /*font-family: "Spoqa Han Sans", "Dotum", sans-serif;*/
+    /*font-size: 16px;*/
+    color: #111;
+    /* 포토샵 설정 값 기준: -50, 1000으로 나눈 후, em 단위를 붙인다*/
+    letter-spacing: -0.05em; 
+    /*line-height: 1.5;*/
+
+    /* 속기형 속성(짧게 줄일 수 있음): 글꼴, 글자 크기, 글자 두께, 글자 기울기, 글자 변형, 행간*/
+
+    /*font: 글자크기 글꼴; (필수!!!)*/
+    /*font: 16px "Spoqa Han Sans", Dotum, sans-serif; */
+
+    /*font: 글자크기/행간 글꼴; (옵션) - 지금 디자인에선 이걸로 사용 */
+    font: 16px/1.5 "Spoqa Han Sans", Dotum, sans-serif;
+
+    /*font: 두께(100~900 폰트에서 기본설정된것만 가능) 기울기 변형(한국어는 대소문자가 없으므로 잘 안함) 글자크기/행간 글꼴; (옵션) - 순서는 상관없음*/
+    /*font: bold italic small-caps 16px/1.5 "Spoqa Han Sans", Dotum, sans-serif;*/
+}
+
+/* 본문디자인 */
+p {
+    margin-top: 0;
+    margin-bottom: 24px 
+    /* 1.5em*/
+}
+
+/* 컨테이너 디자인, 모든 container에 사용하고 싶으면 .앞에 아무것도 안쓰면 된다. 정확히는 *이 있는건데 생략이 가능한거임 */
+.container {
+    /*너비*/
+    /*width: 960px; */
+    /* px은 고정, 반응형은 퍼센트로 하고 최대폭 지정이 가능, 최소폭은 min-width*/
+    width: 90%;
+    /*최대너비*/
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+
+ }

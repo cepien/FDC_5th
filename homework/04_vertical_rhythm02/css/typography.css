@@ -1,0 +1,133 @@
+html {
+    /*rem 단위의 기준 설정 값*/
+    /*왜 10px로 설정하는가? 계산이 용이해지기 때문*/
+    font-size: 10px;
+    /* UI 화면 축이 움직이지 않도록 설정*/
+    overflow-y: scroll;
+}
+
+/*가이드라인 화면에 보여준다*/
+body {
+    margin: 0;
+    /*padding-top: 48px;*/
+    color: #111;
+    /*속기에서도 글꼴이랑 사이즈는 필수*/
+    font: 400 1.6rem/1.5 "Spoqa Han Sans", Dotum, sans-serif;
+    letter-spacing: -0.05em; /*자간은 글자크기에 상대적이므로 em을 사용*/
+}
+
+body.grid {
+    height: 100vh;
+    background: url("../assets/leading_pattern_24.png");
+}
+
+/* 제목디자인 */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    color: #111;
+    margin-bottom: 2.4rem;
+
+}
+
+h1, h2 {
+    font-weight: 300;
+}
+
+h3, h4, h5 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 6.1033rem; /* 4.8827*1.25 */
+    line-height: 7.2rem;
+}
+
+h2 {
+    font-size: 4.8827rem; /* 3.9062*1.25 */
+    line-height: 4.8rem;
+}
+
+h3 {
+    font-size: 3.9062rem; /* 3.125*1.25 */
+    line-height: 4.8rem;
+}
+
+h4 {
+    font-size: 3.125rem; /* 2.5x1.25 */
+    line-height: 4.8rem;
+}
+
+h5 {
+    font-size: 2.5rem; /* 2x1.25 */
+    line-height: 2.4rem;
+}
+
+h6 {
+    font-weight: 700;
+    /* 본문 글자 크기 x 글자 크기 배율 */
+    font-size: 2rem;/* 1.6rem*1.25 */
+    /* 행간 = 디자인 상의 줄 개수 x (행간비율/글자크기비율) 소수점 셋째자리에서 올림 */
+    line-height: 2.4rem;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+/*단락디자인*/
+p {
+    margin-top: 0;
+    margin-bottom: 2.4rem;
+}
+
+.container {
+    width: 74%;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+.list {
+    /* 리스트 초기화 된 상태 */
+    margin-top: 0;
+    margin-bottom: 2.4rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.list a {
+    display: block;
+}
+
+.list.is-horizontal li {
+    float: left;
+    margin-right: 3rem;
+}
+
+/*상태 디자인 (status design)*/
+/*
+ 기본 (:link)
+ 방문한 (:visited)
+ 마우스 올라간 상태 (:hover)
+ 포커스 상태 (:focus)
+ 활성화 상태 (:active)
+*/
+
+.list a {
+    /* a:link 상태임 */
+    color: #0b4bce;
+    text-decoration: none;
+}
+.list a:visited {
+    color: #1a4779;
+}
+.list a:hover {
+    color: #ce0bc7;
+}
+.list a:focus {
+    outline: 3px solid #ce0bc7;
+}
+.list a:active {
+    background: #ce0bc7;
+    color: #fff;
+}

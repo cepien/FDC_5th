@@ -1,0 +1,105 @@
+/*
+ * Color List
+ * #f7dcd5
+ * #fbf3e3
+ * #f8e8da
+ * #f6f8f8
+ * #faebd7
+ * #fbf6e4
+ * #faeae9
+ * #fdf8f1
+ * #eadfe9
+ * #f2f6f5
+ * #faebea
+ * #fbf1e3
+ * #ffffff
+ */
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-size: 1.4rem;
+}
+
+.iconset {
+   /*margin: 4rem;*/
+}
+
+.iconset::after {
+    content: 0;
+    display: none;
+    clear: both;
+}
+
+.icon-wrapper {
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    height: 17rem;
+    text-align: center;
+    /*line-height: 17rem;*/
+    /*아래수치는 눈으로 보면서 조절ㄴ*/
+    padding-top: 4.5rem;
+ 
+    /*익스 하위버전은 호환이 안됨*/
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+
+
+.icon-wrapper:nth-child(20) {
+    background-color: #f7dcd5
+    }
+.icon-wrapper:nth-child(23) {
+    background-color: #fbf3e3
+    }
+.icon-wrapper:nth-child(21) {
+    background-color: #f8e8da
+    }
+.icon-wrapper:nth-child(5) {
+    background-color: #f6f8f8
+    }
+.icon-wrapper:nth-child(7) {
+    background-color: #faebd7
+    }
+.icon-wrapper:nth-child(4) {
+    background-color: #fbf6e4
+    }
+.icon-wrapper:nth-child(10) {
+    background-color: #faeae9
+    }
+.icon-wrapper:nth-child(12) {
+    background-color: #fdf8f1
+    }
+.icon-wrapper:nth-child(13) {
+    background-color: #eadfe9
+    }
+.icon-wrapper:nth-child(15) {
+    background-color: #f2f6f5
+    }
+.icon-wrapper:nth-child(18) {
+    background-color: #faebea
+    }
+.icon-wrapper:nth-child(2) {
+    background-color: #fbf1e3
+    }
+.icon-wrapper:nth-child() {
+    background-color: #ffffff
+    }
+
+
+
+
+
+
+
+
+
+
