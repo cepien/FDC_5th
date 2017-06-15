@@ -3,6 +3,8 @@ body {
 }
 
 .banner {
+    overflow: hidden;
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -15,4 +17,32 @@ body {
     /*margin: -160 0 0 -400px;*/
     
     background: #222;
+}
+
+.banner-apes,
+.banner-golliras,
+.banner-kingkong,
+.banner-logo,
+.banner-content {
+/*     position: absolute; */
+}
+
+.banner-apes {
+
+}
+.banner-golliras {
+
+}
+.banner-kingkong {
+    position: absolute;
+    bottom: 0;
+    right: 11px;
+}
+.banner-logo {
+    position: absolute;
+    
+
+}
+.banner-headline {
+
 }
