@@ -23,16 +23,10 @@ body {
 .banner-golliras,
 .banner-kingkong,
 .banner-logo,
-.banner-content {
-/*     position: absolute; */
-}
+.banner-content {/* position: absolute; */}
 
-.banner-apes {
-
-}
-.banner-golliras {
-
-}
+.banner-apes {position: absolute;bottom: 93px;left: 4px;}
+.banner-golliras {position: absolute;bottom: 23px;left: 11px;}
 .banner-kingkong {
     position: absolute;
     bottom: 0;
@@ -40,9 +34,9 @@ body {
 }
 .banner-logo {
     position: absolute;
-    
-
+    top: 18px;
+    left: 18px;
 }
-.banner-headline {
-
-}
+.banner-content {
+    position: absolute;top: 28px;left: 122px;
+    }
