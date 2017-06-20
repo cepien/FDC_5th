@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 포지셔닝 테크닉</title>
+    <link rel="stylesheet" href="./css/position_parent.css">
+</head>
+<body>
+
+    <div class="box parent is-1st">
+        <!--.box.child.one+box.child.two+box.child.three-->
+        <div class="box child one">1-one</div>
+        <div class="box child two">2-two</div>
+        <div class="box child three">3-three</div>
+    </div>    
+
+    <div class="box parent is-2nd">
+        <!--.box.child.one+box.child.two+box.child.three-->
+        <div class="box child one">2-one</div>
+        <div class="box child two">2-two</div>
+        <div class="box child three">2-three</div>
+    </div>    
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+html {
+    font-size: 10px;
+}
+body {
+    margin: 5rem;
+}
+.box {
+    padding: 1rem;
+    border: 1px solid #aaa;
+}
+.parent {
+    background: #bcbcbc;
+}
+.child {
+    width: 14rem;
+    height: 14rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 300;
+}
+
+.one {
+    /*position: relative;*/
+    /*z-index: 100000;*/
+    background-color : hsl(350, 80%, 50%);
+}
+
+.two {
+    position: absolute;
+    z-index: 100;
+    /*text-shadow: x y blur spread color;*/
+    text-shadow: 0 2px 0.5rem hsl(101, 40%, 30%);
+    background-color : hsl(101, 40%, 50%);
+}
+
+.three {
+    position: absolute;
+    /*z-index: 1000;*/
+    top: 150px;
+    left: 50px;
+    background-color : hsl(200, 80%, 50%);
+}
