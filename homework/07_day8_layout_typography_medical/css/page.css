@@ -42,11 +42,10 @@ body {
 img {
   vertical-align: middle;
 }
-
   
 /*타이포그래피*/
 /*공통디자인*/
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h3, h5, h6 {
   margin-top: 0;
   margin-bottom: 2.1rem;
 }
@@ -57,11 +56,11 @@ p {
 }
 
 /*제목디자인*/
-h1, h2, h3, h4 {
+h1, h3, h5, h6 {
   letter-spacing: -0.05em;
 }
 h1, h3 {
-  font-weight: 300;
+  font-weight: 200;
 	color: #333741;
 }
 h5, h6 {  
@@ -73,7 +72,7 @@ h1 {
   line-height: 6.3rem;
 }
 h3 {
-  padding-top: 4.2rem;
+  /*padding-top: 3.17rem;*/
   font-size: 3.17rem;
   line-height: 4.2rem;
 }
@@ -121,44 +120,68 @@ header {
   text-align: center;
 }
 
-main {}
-.section-important {}
-.order-teeth-manage {
-  /*margin-top: 4.2rem;*/
+main {
+  margin-top: 4.2rem;
 }
+
+/*.section-important {
+}*/
 
 /*카운터 넘버링*/
 .order-teeth-manage {
+  margin-top: 4.2rem;
   /*문법상 리셋을 시켜줘야 한다. 중첩되는 경우 문제가 생김*/
   counter-reset: order-teeth-manage;
 }
+
+.order-teeth-manage li {
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border-bottom: 1px dashed #a9a9a9
+}
+
+.order-teeth-manage li:last-child {
+  border-bottom: none;
+}
 /*증가시키기*/
-.order-teeth-manage li::before {
+/*.order-teeth-manage li::before {
   content: counter(order-teeth-manage) '.';
-  counter-increment: order-teeth-manage;
+  counter-increment: order-teeth-manage;*/
   /*order-title margin left 5px를 줘도 같다. 단지 css문서내에서 일관성이 있어야 함*/
-  margin-right: 5px;
+  /*margin-right: 5px;
+}*/
+
+.order-index {
+  font-weight: 400;
+  margin-right: 1rem;
+}
+
+.order-img {
+  float: left;
+  /*line-height: 10.5rem;*/
+  margin-right: 1rem;
+  /*margin-bottom: 2.1rem;*/
+}
+.order-content {
+  overflow: hidden;
 }
 
 .order-title {
   display: inline-block;
-  margin-top: 2.1rem;
+  /*margin-top: 2.1rem;*/
   margin-bottom: 2.1rem;
   font-weight: 700;
   color: #787f94;
   letter-spacing: -0.01em;
 }
 
-.order-img {
-  float: left;
-  /*margin-right: 1rem;*/
+.order-desc.is-last {
+  padding-bottom: 4.2rem;
 }
 
-/*.order-content {
-  overflow: hidden;
-}*/
 /*.order-desc {
-  padding-bottom: 2.1rem;
 }*/
 
-.section-QnA {}
+.section-QnA {
+  margin-top: 4.2rem;
+}
