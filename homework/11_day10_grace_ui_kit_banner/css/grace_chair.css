@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/*!mhye's*/
+
+::selection {
+    background: #dba68f;
+    color: #fff;
+}
+
+html {
+    background: #eee;
+}
+
+/*webfont Module*/
+.baskerville {
+    font-family: 'Libre Baskerville', serif;
+}
+.is-italic {
+    font-style: italic;
+}
+
+.montserrat {
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+.is-bold {
+    font-weight: 700;
+}
+
+/*배너디자인*/
+.grace-ui.chair {
+    width: 580px;
+    height: 450px;
+    background: #fff url("../assets/grace_chair.png") no-repeat 46px 91px;
+    border: 1px solid rgba(238,238,238,.51);
+    box-shadow: none;
+    border-radius: 10px;
+    transition: box-shadow 1.2s ease-in-out;
+}
+
+.grace-ui.chair:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, .2)
+}
+
+.is-centerXY {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -225px;
+    margin-left: -290px;
+}
+
+.chair-category {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 12px;
+    letter-spacing: .6px;
+    text-transform: uppercase;
+}
+
+.chair-headline {
+    margin: 0;
+    position: absolute;
+    top: 126px;
+    left: 337px;
+    font-size: 28px;
+    line-height: 1.36;
+}
+
+.chair-text {
+    margin: 0;
+    position: absolute;
+    top: 218px;
+    left: 339px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #8c9199;
+}
+
+/*본문 텍스트라면 클래스 없이 아래처럼 써야하나?*/
+/*body {
+  margin: 0;
+  font-size:  1.4px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  color: #8c9199;
+}*/
+
+.chair-button {
+    position: absolute;
+    bottom: 79px;
+    right: 179px;
+}
