@@ -1,0 +1,52 @@
+/*!mhye's*/
+
+body {
+    margin: 0;
+    background: #333;
+}
+
+
+
+.poster.is_centerX {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /*background: rgba(256, 256, 256, .6);*/
+
+}
+
+.poster.is_centerY {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.poster.is-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*변형(Traslate)*/
+    /*박스 자신의 가로(x), 세로 (y) 길이의 절반만큼 위치 이동* 익스 10부터 지원됨*/
+    transform: translate(-50%, -50%);
+    /*transform: translateX(-50%) translateY(-50%);*/
+
+
+    
+}
+
+.poster.wall_e {
+    width: 1000px;
+    height: 1000px;
+    /* 멀티 배경 이미지를 배치(Layout) 
+    콤마(,)가 구분자 
+    포토샵 순서대로 배치하면 됨*/
+    background: url("../assets/soundtrack.png") no-repeat 167px 35px,     url("../assets/disney-pixar.png") no-repeat 363px 88px,             url("../assets/logo.png") no-repeat 108px 123px,              
+    url("../assets/eve.png") no-repeat 571px 300px,              
+    url("../assets/wall-e.png") no-repeat 264px 344px,              
+    url("../assets/m-o.png") no-repeat 203px 699px,              
+    url("../assets/music.png") no-repeat 152px 930px,
+    /*선형 그라디언트(linear-gradient)*/
+    linear-gradient(120deg ,#000 20%, rgba(111, 5, 220, .2) 100%)
+    /*배율(cale tranform)*/
+    ;
+}

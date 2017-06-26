@@ -17,7 +17,14 @@
         <h5 class="chair-headline baskerville">New armchair<br>Genny Chair</h5>
         <!--배너 본문 텍스트-->
         <p class="chair-text montserrat">Genny is completely made<br>of turned ash with a leather<br>upholstered seat.</p>
-        <a href="#" class="chair-button"><img src="./assets/btn_next_nor.png" alt="상세 페이지로 이동 버튼"></a>
+        <!-- 버튼 css에서 처리하는게 훨씬 좋다
+        방법1 css에서 border radius + font icon
+        방법2 css에서 background 이미지로 처리-->
+        <!--alt 대신에 aria-lable이란 녀석을 사용할 수도 있으므로 img태그를 사용하지 않는 방법도 있다-->
+        <!--html문서 상에서 시작태그 끝태그 사이에 꼭 뭐가 채워져 있을 필요는 없다-->
+        <a href="#" class="chair-button">
+            <img src="./assets/btn_next_nor.png" alt="상세 페이지">
+        </a>
     </div>
 </body>
 </html>
