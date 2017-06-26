@@ -30,8 +30,8 @@ body{
 
 .album-item {
     position: absolute;
-    top: 0;
-    right: 0;
+    /*top: 0;
+    right: 0;*/
 }
 
 .album-item.cover { 
@@ -52,19 +52,56 @@ body{
 /*js -> Mouse Over, Mouse Enter*/
 
 .album .album-item {
-    /*top: 0;
-    right: 0;*/
-    /*transition: all 1s ease-out;*/
+    top: 0;
+    right: 0;
+    transition: all 1s ease-out;
 }
 
+/*.album.open .album-item.sleeve,*/
 .album:hover .album-item.sleeve {
     top : -5px;
     right: -25px;
-    transition: all 1s ease-out;
+    /*transition: all 1s ease-out;*/
 }
 
 .album:hover .album-item.disk {
     right: -80px;
     transform: rotate(720deg);
-    transition: all 1s ease-out 1s;
+    /*transition: all 1s ease-out 1s;*/
 }
+
+.album.open:hover .album-item.disk {
+    animation: infinite-rotate-disk 10s infinite;
+}
+
+/*사용자 애니메이션을 정의*/
+/*키프레임 등록해서 각 프레임마다 스타일을 설정*/
+@keyframes infinite-rotate-disk {
+    /*키프레임*/
+    /*시작(from) - 끝(to)*/
+    from {
+        transform: rotate(720deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+
+    /*여러개의 타이밍이라면 %로 키를 정할 수 있음*/
+    /* 시작(0%) - 끝(100%) */
+    /*0% {
+        transform: rotate(720deg);
+    }
+    25% {
+        transform: rotate(720deg);
+    }
+    50% {
+        transform: rotate(720deg);
+    }
+    75% {
+        transform: rotate(720deg);
+    }
+    100% {
+        transform: rotate(0deg);
+  }*/    
+}
+
