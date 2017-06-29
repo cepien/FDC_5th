@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+::selection {
+    background: #dba68f;
+    color: #fff;
+}
+
+html {
+    background: #eee;
+}
+
+/*webfont module*/
+.baskerville {
+    font-family: 'Libre Baskerville', serif;
+}
+.is-italic {
+    font-style: italic;
+}
+
+.montserrat {
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+.is-bold {
+    font-weight: 700;
+}
+
+/*보드디자인*/
+.grace-ui.board {
+    width: 380px;
+    height: 450px;    
+    border: 1px solid rgba(238,238,238,.51);
+    box-shadow: none;
+    border-radius: 10px;
+    transition: box-shadow 1.2s ease-in-out;
+    background: #fff;
+}
+
+.grace-ui.board:hover {
+    box-shadow: 0 0 40px rgba(0,0,0,,.2);
+}
+
+.is-centerXY {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -190px;
+    margin-left: -225px;
+}
+
+
+
+
+/*탭 디자인*/
+.tabs {
+    position: absolute;
+    width: 380px;
+    height: 50px;
+    /*background: red;*/
+    font-size: 12px;
+    /*line height 무시하고 버튼 height로 줘도 되는지?*/
+    line-height: 50px;
+    letter-spacing: 0.6px;
+    /*text-decoration: none;*/
+}
+
+.tabs.is-1st {
+    /*margin: 0;*/
+    /*padding-top: 20px;*/
+    position: absolute;
+    width: 126px;
+    height: 50px;
+    /*background: green;*/
+    text-align: center;
+
+}
+
+.tabs.is-2nd {
+    position: absolute;
+    left: 127px;
+    width: 126px;
+    height: 50px;
+    /*background: blue;*/
+    text-align: center;
+}
+
+.tabs.is-3rd {
+    position: absolute;
+    right:0;
+    width: 126px;
+    height: 50px;
+    /*background: black;*/
+    text-align: center;
+}
+
+.ver-divider.is-1st {
+    position: absolute;
+    left: 126px;
+    width: 1px;
+    height: 50px;
+    background: rgb(222, 223, 229);
+}
+
+.ver-divider.is-2nd {
+    position: absolute;
+    left: 254px;
+    width: 1px;
+    height: 50px;
+    background: rgb(222, 223, 229);
+}
+
+.tabs.hor-divider {
+    position: absolute;
+    top: 50px;
+    background: url("../assets/tab_hor_divider.png") no-repeat; 
+}
+
+
+
+
+/*아티클 디자인*/
+.articles {
+    position: absolute;
+    top: 58px;
+}
+.top_blank {
+    position: absolute;
+    /*top: 58px;*/
+    width: 380px;
+    height: 19px;
+    color: red;
+}
+
+
+
+/*하이퍼링크디자인*/
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    color: #12407e;
+}
+a:active {
+    color: #12407e;
+}
+/*a:visited {
+    color: #000;
+}
+*/
