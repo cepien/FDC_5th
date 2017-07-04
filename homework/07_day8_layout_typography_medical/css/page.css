@@ -12,6 +12,9 @@ body {
   color: #333741;
 }
 
+
+
+
 /* 기준선 가이드 (Baseline Guide) */
 .guide {
   height: 300vh;
@@ -38,11 +41,17 @@ body {
   background: hsla(246.9, 60.2%, 63.4%, 0.95);
 }
 
+
+
+
 /*이미지 정렬*/
 img {
-  vertical-align: middle;
+  vertical-align: bottom;
 }
-  
+
+
+
+
 /*타이포그래피*/
 /*공통디자인*/
 p, h1, h3, h5, h6 {
@@ -85,17 +94,8 @@ h6 {
   color: #47494e;
 }
 
-/*목록디자인*/
-.reset-list {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 2.1rem;
-  padding-left: 0;
-}
-ul {}
-li {}
-dt {}
-dd {}
+
+
 
 /*하이퍼링크디자인*/
 a:link {
@@ -105,6 +105,9 @@ a:link {
 a:hover {
   color: #41b4cd;
 }
+
+
+
 
 /*레이아웃*/
 .container {
@@ -123,6 +126,32 @@ header {
 main {
   margin-top: 4.2rem;
 }
+
+footer {
+  margin-top: 6.3rem;
+  margin-bottom: 6.3rem;
+}
+
+footer h5 {
+  margin-top: 6.3rem;
+  text-align: right;
+}
+
+
+/*목록디자인*/
+.reset-list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 2.1rem;
+  padding-left: 0;
+}
+ul {}
+li {}
+
+
+
+
+/* main section 1 치아관리의 중요성*/
 
 /*.section-important {
 }*/
@@ -175,6 +204,7 @@ main {
   letter-spacing: -0.01em;
 }
 
+/*이걸 안주고 section qna의 margin top을 6.3rem으로 주면 치아상식이 위로 조금 밀리는데??*/
 .order-desc.is-last {
   padding-bottom: 4.2rem;
 }
@@ -182,6 +212,33 @@ main {
 /*.order-desc {
 }*/
 
+
+
+
+/* main section 2  치아상식 QnA*/
+/*정의 목록 디자인*/
 .section-QnA {
   margin-top: 4.2rem;
 }
+
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+dt {
+  margin-top: 2.1rem;
+  margin-bottom: 2.1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #2b2c2f;
+}
+dd {
+  margin-top: 0;
+  margin-left: 0;
+  letter-spacing: .03em;
+  color: #333741;
+}
+
+
+
+
