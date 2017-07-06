@@ -1,0 +1,69 @@
+/* mine grid-960-split*/
+
+body {
+    margin: 0;
+}
+
+body.grid {
+    position: relative;
+}
+
+body.grid::before,
+body.grid::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 200vh;
+}
+
+body.grid::before {
+    z-index: 10000;
+    width: 100%;
+    background: linear-gradient(180deg, transparent 9px, rgba(120, 100, 0, .2) 9px);
+    background-size: 1px 10px;
+}
+
+body.grid::after {
+    z-index: 1000;
+    width: 960px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, transparent 12px, rgba(120, 100, 0, .2) 12px, rgba(120, 100, 0, .2) 108px, transparent 108px);
+    background-size: 120px 1px;
+}
+
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.column {
+    float: left;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.column.is-1 { width: 96px; }
+.column.is-2 { width: 216px; }
+.column.is-3 { width: 336px; }
+.column.is-4 { width: 456px; }
+.column.is-5 { width: 576px; }
+.column.is-6 { width: 696px; }
+.column.is-7 { width: 816px; }
+.column.is-8 { width: 936px; }
+
+.column.is-offset-1 { margin-left: 120px; }
+.column.is-offset-2 { margin-left: 240px; }
+.column.is-offset-3 { margin-left: 360px; }
+.column.is-offset-4 { margin-left: 480px; }
+.column.is-offset-5 { margin-left: 600px; }
+.column.is-offset-6 { margin-left: 720px; }
+.column.is-offset-7 { margin-left: 840px; }
+
