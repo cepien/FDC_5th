@@ -1,0 +1,66 @@
+html {
+    font-size: 10px
+}
+
+body {
+    margin: 0;
+    font: 100%/1.5 Dosis, Sans-Serief;
+    background: #fff;
+}
+
+/*
+purple #7d51ff
+light gray #a3a4bd
+dark gray #454553*/
+
+.done-page {
+    text-align: center;
+    padding-top: 8.4rem;
+    padding-left: 13.3333%;
+    padding-right: 13.3333%;
+}
+.icon {
+
+}
+.is-done {
+
+}
+.title {
+    
+    padding-top: 0.5rem;
+    font-size: 5rem;
+    font-weight: 200;
+    line-height: 1.2;
+    color: #7d51ff;
+}
+.sub-title {
+    /*margin: 0;*/
+    padding-top: 7.5rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    color: #454553;
+}
+
+
+.link {
+    display: block;
+    padding: 1em 0;
+    font-size: 1.6rem;
+
+}
+
+.is-order {
+    padding-bottom: 8.7rem;
+    line-height: 1.125;
+    color: #a3a4bd;
+}
+
+.is-shop {
+    padding-bottom: 7.9rem;
+    line-height: 1.2;
+    text-decoration: none;
+    color: #7d51ff;
+    font-weight: 600;
+}
