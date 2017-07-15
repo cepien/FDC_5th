@@ -1,0 +1,79 @@
+.hide {
+	display: none;
+}
+
+.demo {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+}
+
+.sprite-zone {
+    width: 103px;
+    height: 52px;
+	padding: 1em;
+    background: #fff;
+}
+
+.sprite-zone::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*.sprite {
+    float: left;
+    width: 52px;
+    height: 26px;
+    background-image: url("../gui_assets/sprites_auto.png.png");
+    background-color: #eee;
+}*/
+
+.americanexpress, .behance, .clock, .facebook, .headset, .instagram, .lock{
+	background: url(sprites.png) no-repeat;
+}
+
+.americanexpress{
+	background-position: 0 -1px ;
+	width: 52px;
+	height: 16px;
+}
+
+.behance{
+	background-position: -57px 0;
+	width: 26px;
+	height: 26px;
+}
+
+.clock{
+	background-position: -86px -2px ;
+	width: 17px;
+	height: 17px;
+}
+
+.facebook{
+	background-position: -1px -20px ;
+	width: 26px;
+	height: 26px;
+}
+
+.headset{
+	background-position: -31px -24px ;
+	width: 16px;
+	height: 17px;
+}
+
+.instagram{
+	background-position: -49px -26px ;
+	width: 26px;
+	height: 26px;
+}
+
+.lock{
+	background-position: -78px -28px ;
+	width: 12px;
+	height: 16px;
+}
+

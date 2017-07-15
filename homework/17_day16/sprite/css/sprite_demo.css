@@ -1,0 +1,57 @@
+.demo {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+}
+
+.sprite-zone {
+    width: 156px;
+    height: 78px;
+    background: #fff;
+}
+
+.sprite-zone::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.sprite {
+    float: left;
+    width: 52px;
+    height: 26px;
+    /*flex: 0 0 26px;*/
+    background-image: url("../gui_assets/handmade.png");
+    background-color: #eee;
+}
+
+.sprite.is-behance {
+    background-position: 0 0;
+}
+.sprite.is-lock {
+    background-position: 0 -26px;
+}
+.sprite.is-clock {
+    background-position: 0 -52px;
+}
+.sprite.is-facebook {
+    background-position: -52px 0;
+}
+.sprite.is-instagram {
+    background-position: -52px -26px;
+}
+.sprite.is-sound {
+    background-position: -52px -52px;
+}
+.sprite.is-americanex {
+    background-position: -104px 0;
+}
+.sprite.is-bag {
+    background-position: -104px -26px;
+}
+.sprite.is-arrow {
+    background-position: -104px -52px;
+}
+
