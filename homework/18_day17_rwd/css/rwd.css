@@ -1,0 +1,178 @@
+/*!mhye's*/
+
+body {
+    background: #fff;
+}
+
+
+/*figure element는 상하좌우 마진값을 가지고 있다*/
+body, figure {
+    margin: 0;
+}
+
+img, video {
+    /*사진 아래 공간 없어짐*/
+    vertical-align: bottom;
+}
+
+
+/*사용자 정의 디자인*/
+
+.hide {
+    display: none;
+}
+
+/*.demo {
+    padding: 30px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
+.img-wrapper, .video-wrapper {
+    margin-bottom: 20px;
+    border: 5px solid #eee;
+}
+
+
+/*배경 이미지 반응형 처리*/
+.green-leap {
+    background: url("https://unsplash.it/800/420/?image=18") no-repeat;
+    /*width: 800px;
+    height: 420px;*/
+    /*420/800*100%*/
+    /*높이/너비 * 100%*/
+    /*이미지의 높이를 퍼센트로 작성해야 한다*/
+    padding-top: 52.5%;
+}
+
+.fork {
+    background: url("https://unsplash.it/1000/350/?image=23") no-repeat;
+    /*width: 1000px;
+    height: 350px;*/
+    padding-top: 35%;
+}
+
+.big-header {
+    height: 100vh;
+    background: #eee;
+}
+
+
+.big-header-title {
+    position: absolute;
+    z-index: 100;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 50px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.bird {
+    background: url("../assets/bird.jpg") no-repeat center top;
+}
+
+
+
+/*이미지 스케일 업 모듈*/
+.scale-up {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+}
+
+.scale-up .scale-wrap {
+    position: relative;
+    overflow: hidden;
+    height: inherit;
+}
+
+.scale-up .scale-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.scale-up .scale-img {
+    transform: scale(1);
+    transition: all .3s;
+}
+
+.scale-up:hover .scale-img {
+    transform: scale(1.2);
+}
+
+/*반응형 웹 디자인 클래스(모듈)*/
+
+
+/*e.g) content image*/
+.rwd-img, .rwd-video {
+    /*max-width: 800px; -> 재사용모듈에선 비추천*/
+    width: 100%;
+    /*이미지가 찌그러지는걸 방지*/
+    height: auto;
+}
+
+/*e.g) background image*/
+.rwd-bg {
+    width: 100%;
+    height: 0;
+    /*이미지도 같이 줄게 하려면*/
+    background-size: cover;
+}
+
+/*e.g) crop image*/
+.crop-img-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: inherit;
+}
+
+.crop-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.media-zone {
+    max-width: 700px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*유튜브, map 모듈*/
+.youtube, .map {
+    position: relative;
+    width: 100%;
+    height: 0;
+}
+
+.youtube.is-4x3,
+.map.is-4x3 {
+    padding-top: 75%;
+}
+.youtube.is-16x9,
+.map.is-16x9 {
+    padding-top: 56.25%;
+}
+.youtube.is-21x9,
+.map.is-21x9 {
+    padding-top: 42.857142857%;
+}
+
+.youtube iframe,
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
