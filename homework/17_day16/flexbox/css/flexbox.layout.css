@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #aaa;  
+}
+
+.container {
+
+    display: flex;
+    /*flex-direction: column-reverse;
+    flex-wrap: wrap;*/
+    /*위 두개의 속기형*/
+    /*flex-flow: row;*/
+    /*justify-content: space-around;*/
+    /*flex-star
+    center
+    space-around
+    space-between*/
+    /*align-items: flex-start;*/ /*개별아이템*/
+    align-content: stretch; /*컨텐츠 그룹 정렬*/
+    background: #121212;
+    width: 70%;
+    height: 450px;
+}
+
+.item {
+    width: 45px;
+    /*height: 45px;*/
+    /*margin-bottom: 4px;*/
+    margin-right: 4px;
+    background: #fff;
+    font-size: 20px;
+    color: #434343;
+    /*완벽하지 않은 방법*/
+    /*text-align: center;
+    line-height: 90px;*/
+}
+
+/*.item:nth-child(3n-1) {
+    height: 200px;
+}*/
+
+.is-center {
+    display: flex;
+    justify-content: center; /*메인에 대한 정렬*/
+    align-items: center; /*교차점에 대한 정렬*/
+}
