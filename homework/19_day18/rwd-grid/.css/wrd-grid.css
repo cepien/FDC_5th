@@ -1,0 +1,170 @@
+/*!mhye's*/
+
+/*
+gs설계
+flexbox
+grid
+> float
+
+> container
+> row(columns)
+> col(column)
+> is-{1, 12}
+> is-offset-{1, 11}
+
+> Mobile first
+
+> 500 (xs) m mobile 
+> 800 (m) t tablet
+> 1200 (l) d desktop
+1920 (xl) w widescreen
+*/
+
+/*common desing*/
+html {
+    font-size: 10px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+body, body *, 
+body::before, body::after, 
+body *::before, body *::after {
+    transition: all .4s ease-out;
+    /*보더 영역까지 width, height값을 적용해주므로 마진만 안주면 박스가 무너지지 않는다*/
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    /*height: 100vh;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.row::after, 
+.clear-fix::after {
+    content: '';
+    display: block; 
+    clear: both;
+}
+
+.column {
+    float: left;
+}
+
+
+/*mobile view :[4] 500이하*/
+/*모바일 페이지에서는 마진을 쓰면 무너질 확률이 높으므로 주로 패딩 적용*/
+/*calc 함수는 ie9에서 부분적으로 가능*/
+.is-1 { width: calc(1/12 * 100%); }
+.is-2 { width: calc(2/12 * 100%); }
+.is-3 { width: calc(3/12 * 100%); }
+.is-4 { width: calc(4/12 * 100%); }
+.is-5 { width: calc(5/12 * 100%); }
+.is-6 { width: calc(6/12 * 100%); }
+.is-7 { width: calc(7/12 * 100%); }
+.is-8 { width: calc(8/12 * 100%); }
+.is-9 { width: calc(9/12 * 100%); }
+.is-10 { width: calc(10/12 * 100%); }
+.is-11 { width: calc(11/12 * 100%); }
+
+.is-o-1 { width: calc(1/12 * 100%); }
+.is-o-2 { width: calc(2/12 * 100%); }
+.is-o-3 { width: calc(3/12 * 100%); }
+.is-o-4 { width: calc(4/12 * 100%); }
+.is-o-5 { width: calc(5/12 * 100%); }
+.is-o-6 { width: calc(6/12 * 100%); }
+.is-o-7 { width: calc(7/12 * 100%); }
+.is-o-8 { width: calc(8/12 * 100%); }
+.is-o-9 { width: calc(9/12 * 100%); }
+.is-o-10 { width: calc(10/12 * 100%); }
+.is-o-11 { width: calc(11/12 * 100%); }
+@media screen and (max-width: 500px) {
+    /*.container {
+        width: 100vw;
+    }
+
+    .column {
+        float: left;
+    }
+    */
+    .is-hidden { display: none !important; }
+
+    body { 
+        background: #4dc995; 
+        /*font-size: 1.4rem;*/
+    }
+    /*body::before { content: 'Mobile'; }*/
+}
+
+
+/*tablet view : [8] 800이하*/
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    .is-t-1 { width: calc(1/12 * 100%); }
+    .is-t-2 { width: calc(2/12 * 100%); }
+    .is-t-3 { width: calc(3/12 * 100%); }
+    .is-t-4 { width: calc(4/12 * 100%); }
+    .is-t-5 { width: calc(5/12 * 100%); }
+    .is-t-6 { width: calc(6/12 * 100%); }
+    .is-t-7 { width: calc(7/12 * 100%); }
+    .is-t-8 { width: calc(8/12 * 100%); }
+    .is-t-9 { width: calc(9/12 * 100%); }
+    .is-t-10 { width: calc(10/12 * 100%); }
+    .is-t-11 { width: calc(11/12 * 100%); }
+    
+    .is-o-t-1 { width: calc(1/12 * 100%); }
+    .is-o-t-2 { width: calc(2/12 * 100%); }
+    .is-o-t-3 { width: calc(3/12 * 100%); }
+    .is-o-t-4 { width: calc(4/12 * 100%); }
+    .is-o-t-5 { width: calc(5/12 * 100%); }
+    .is-o-t-6 { width: calc(6/12 * 100%); }
+    .is-o-t-7 { width: calc(7/12 * 100%); }
+    .is-o-t-8 { width: calc(8/12 * 100%); }
+    .is-o-t-9 { width: calc(9/12 * 100%); }
+    .is-o-t-10 { width: calc(10/12 * 100%); }
+    .is-o-t-11 { width: calc(11/12 * 100%); }
+    .is-t-hidden { display: none !important; }
+
+
+
+    body { 
+        background: #fed761; 
+        /*font-size: 1.8rem;*/
+    }
+    /*body::before { content: 'Tablet'; }*/
+}
+
+/*desktop view  : [12] 1200이하*/
+@media screen and (min-width: 801px) {
+    .is-d-1 { width: calc(1/12 * 100%); }
+    .is-d-2 { width: calc(2/12 * 100%); }
+    .is-d-3 { width: calc(3/12 * 100%); }
+    .is-d-4 { width: calc(4/12 * 100%); }
+    .is-d-5 { width: calc(5/12 * 100%); }
+    .is-d-6 { width: calc(6/12 * 100%); }
+    .is-d-7 { width: calc(7/12 * 100%); }
+    .is-d-8 { width: calc(8/12 * 100%); }
+    .is-d-9 { width: calc(9/12 * 100%); }
+    .is-d-10 { width: calc(10/12 * 100%); }
+    .is-d-11 { width: calc(11/12 * 100%); }
+    
+    .is-o-d-1 { width: calc(1/12 * 100%); }
+    .is-o-d-2 { width: calc(2/12 * 100%); }
+    .is-o-d-3 { width: calc(3/12 * 100%); }
+    .is-o-d-4 { width: calc(4/12 * 100%); }
+    .is-o-d-5 { width: calc(5/12 * 100%); }
+    .is-o-d-6 { width: calc(6/12 * 100%); }
+    .is-o-d-7 { width: calc(7/12 * 100%); }
+    .is-o-d-8 { width: calc(8/12 * 100%); }
+    .is-o-d-9 { width: calc(9/12 * 100%); }
+    .is-o-d-10 { width: calc(10/12 * 100%); }
+    .is-o-d-11 { width: calc(11/12 * 100%); }
+    .is-d-hidden { display: none !important; }
+
+    body { 
+        background: #3273dc; 
+        /*font-size: 2.4rem;*/
+    }
+    /*body::before { content: 'Desktop'; }*/
+
+}

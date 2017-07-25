@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rwd grid</title>
+    <link rel="stylesheet" href=".css/wrd-grid.css">
+    <style>
+        .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        border: 1px solid #eee;;
+        color: #fff;
+    }
+
+        .is-o {
+            background: #222;
+        }
+        .is-n {
+            background: #555;
+        }
+        .is-e {
+            background: #999;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>RWD</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="is-o box column is-4 is-t-3 is-d-2">m1 t1 d1</div>
+            <div class="is-n box column is-4 is-t-6 is-d-2">m1 t2 d1</div>
+            <div class="is-e  box column is-4 is-t-3 is-d-8">m1 t1 d4</div>
+        </div>
+
+        <div class="row">
+            <div class="is-o box column is-4 is-t-hidden is-d-8">m1 t0 d2</div>
+            <div class="is-n box column is-hidden is-t-8 is-d-4">m0 t2 d1</div>
+            <div class="is-e  box column is-8 is-t-4 is-d-hidden">m2 t1 d0</div>
+        </div>
+
+        <div class="row">
+            <div class="is-o box column is-4">m1 t1 d1</div>
+            <div class="is-n box column is-4">m1 t1 d1</div>
+            <div class="is-e  box column is-4">m1 t1 d1</div>
+        </div>
+
+    </div>
+</body>
+</html>

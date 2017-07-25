@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="10px" viewBox="0 0 11 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-437.000000, -277.000000)" stroke="#979797">
+            <g id="Group" transform="translate(437.000000, 277.000000)">
+                <path d="M0,5 C6.66666667,5 10,5 10,5" id="Path"></path>
+                <polyline id="Path-2" transform="translate(5.964401, 4.964401) rotate(-315.000000) translate(-5.964401, -4.964401) " points="3 2 8.92880109 2 8.92880109 7.92880109"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
