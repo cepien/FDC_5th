@@ -5,15 +5,16 @@
     content: '';
     display: block; 
     clear: both;
-}
+} 
 
-.column {
-    float: left;
-}
-
-/*figure element는 상하좌우 마진값을 가지고 있다*/
 body, figure {
     margin: 0;
+}
+.navbar {
+    z-index: 10000;
+}
+.hero-wrapper {
+    z-index: 1000;
 }
 
 img {
@@ -21,28 +22,49 @@ img {
     vertical-align: bottom;
 }
 
-.hero-img {
-    width: 100%;
-    height: auto;
+.logo {
+    float: left;
+}
+.btn-drawer {
+    float: right;
 }
 
 @media screen and (max-width: 480px) {
     .container {
-    width: 100%;
-    /*height: 100vh;*/
-    /* margin-left: 1.6rem; */
-    /* margin-right: 1.6rem;  */
-    margin-left: auto;
-    margin-right: auto;
+        /* width: 100%; */
+        max-width: 480px;
+        height: 300vh;
+        margin-left: 1.6rem; 
+        margin-right: 1.6rem;  
     }
-
     body { 
         background: #4dc995; 
         font-size: 1.4rem;
     }    
-
+    .hero-img-m {
+        width: 100%;
+        height: auto;
+    }
     .hero-img-t, .hero-img-d {
         display: none;
+    }
+    .navbar-bg {
+        width: 100%;
+        height: 6.4rem;
+        background: #ffffff;
+    }
+    .navbar-divider {
+        width: 100%;
+        height: .4rem;
+        background: #0b4bce;
+    }
+    .logo {
+        width: 163px;
+        height: 23px;
+    }
+    .btn-drawer {
+        width: 24px;
+        height: 17px;
     }
 }
 
@@ -59,9 +81,24 @@ img {
         background: #fed761; 
         font-size: 1.7rem;
     }  
+    .hero-img-t {
+        width: 100%;
+        height: auto;
+    }
     .hero-img-m, .hero-img-d {
         display: none;
     }
+    .navbar-bg {
+        width: 100%;
+        height: 9.6rem;
+        background: #ffffff;
+    }
+    .navbar-divider {
+        width: 100%;
+        height: .4rem;
+        background: #0b4bce;
+    }
+
 }
 
 @media screen and (min-width: 1281px) {
@@ -75,7 +112,22 @@ img {
         background: #3273dc; 
         font-size: 1.6rem;
     }  
+    .hero-img-d {
+        width: 100%;
+        height: auto;
+    }
     .hero-img-m, .hero-img-t {
         display: none;
     }
+    .navbar-bg {
+        width: 100%; 
+        height: 9.6rem;
+        background: #ffffff;
+    }
+    .navbar-divider {
+        width: 100%;
+        height: .4rem;
+        background: #0b4bce;
+    }
+
 }
